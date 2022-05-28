@@ -11,14 +11,12 @@
 <body>
     <main>
         <section>
-
-            <h1>Crie seu perfil ninja</h1>
         
     <div class="formulario">
 
         <form action="" method="get" class="formStyling" id="form">
             <div class="item">
-                <label for="nomeNinja">Digite seu nome ninja</label>
+                <label for="nomeNinja">Digite seu nome</label>
                 <input type="text" id="nomeNinja" name="nomeNinja">
                 <i class="fa-regular fa-thumbs-up"></i>
                 <i class="fa-regular fa-thumbs-down"></i>
@@ -33,12 +31,13 @@
                 <div class="error"></div>
             </div>
 
-            <div class="itens">
-                <label for="imagemNinja">Escolha sua imagem de perfil</label>
-                <input type="image" id="imagemNinja" name="imagemNinja">
-                <div class="error"></div>
-
+            <div>
+                <input id="img-input" type="file" name="imagem">
             </div>
+            <div id="img-container">
+                <img id="preview" src="">
+            </div>
+            
 
         <div class="item">
 

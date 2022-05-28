@@ -45,30 +45,13 @@ form.addEventListener('submit', (e) => {
     }
 })
 
-const imagem = document.querySelectorAll('.item img');
-const urlImagens = [];
-
-imagem.forEach(function (_ , botao){
-    const url = [];
-    url.push(url)
-})
-
-urlImagens.forEach(function (url,index){
-    const imagem = document.querySelectorAll(`#imagem-${index}`)
-    imagem.setAttibute('src', url)
-})
-
-imagem.forEach(function (element, index){
-    const link = document.createElement('a')
-    link.appendChild(element)
-    link.classList.add('img-routes')
-    link.setAttribute('href', `${element.sec}`)
-    link.addEventListener('click', event =>{
-        event.preventDefault()
-        const newWindow = window.open(element.src, '_blank')
-        newWindow.focus() 
-    })
-    const div = document.getElementsByClassName('item')
-    div[index].appendChild(link)
+function readImage() {
+    if (this.files && this.files[0]) {
+        var file = new FileReader();
+        file.onload = function(e) {
+            document.getElementById("preview").src = e.target.result;
+        };       
+        file.readAsDataURL(this.files[0]);
+    }
 }
-)
+document.getElementById("img-input").addEventListener("change", readImage, false);
