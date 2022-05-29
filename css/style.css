@@ -9,10 +9,24 @@
 body{
     font-family: 'Roboto', sans-serif;
     height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(247,130,39,1) 49%, rgba(0,0,0,1) 100%);
+    background: url(/FrontEnd2/Checkpoint-1/img/wallpaper.jpg);
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo{
+    display: flex;
+    width: 75vw;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
     justify-content: center;
 }
 
@@ -90,4 +104,9 @@ body{
     -o-border-radius: 5px;
     cursor: pointer;
     background-color: rgb(255, 153, 0);
+}
+
+.card{
+    background-color: azure;
+    visibility: hidden;
 }
