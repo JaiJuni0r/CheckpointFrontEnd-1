@@ -12,7 +12,6 @@ body{
     width: 100vw;
     background: url("https://criticalhits.com.br/wp-content/uploads/2018/12/12-1.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,8 +28,7 @@ body{
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .titulo p{
@@ -118,7 +116,6 @@ body{
 .card
 {
   width:100vw;
-  width: 90vw;   
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -137,17 +134,17 @@ body{
   cursor:pointer;
   transition: all 0.4s ease-out;
   overflow:hidden;
-  color:white;
+  color:rgb(0, 0, 0);
   font-family:'Roboto';
   
 }
 .card img
 {
-  height:160px;
+  height:50%;
   width: 100%;
   position:absolute;
   border-radius: 8px;
-  top:250px;
+  top:200px;
   left:0;
   z-index:0;
   transition: all 0.4s ease-out;
@@ -181,7 +178,6 @@ body{
   font-weight:300;
   margin:20px 0 0 0;
   line-height: 25px;
-/*   opacity:0; */
   transform: translateX(-200px);
   transition-delay: 0.2s;
 }

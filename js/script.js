@@ -28,7 +28,9 @@ enviar.addEventListener('click', (e) => {
             e.preventDefault();
             mensagemError.push('Ei, ninja-chan, adicione seu nome!')
             placeholder[0].innerText = mensagemError;
+            item[0].classList.remove('sucess');
             item[0].classList.add('fail');
+            
         } 
         
         else{
@@ -47,7 +49,9 @@ enviar.addEventListener('click', (e) => {
             e.preventDefault();
             mensagemError.push('Ei, ninja-chan, adicione sua aldeia!')
             placeholder[1].innerText = mensagemError;
+            item[1].classList.remove('sucess');
             item[1].classList.add('fail');
+            
         } 
 
         else{
@@ -67,8 +71,9 @@ enviar.addEventListener('click', (e) => {
             mensagemError.push('Ei, ninja-chan, adicione seu rank!')
             item[2].classList.remove('sucess');
             placeholder[2].innerText = mensagemError;
-            item[2].classList.add('fail');
             item[2].classList.remove('sucess');
+            item[2].classList.add('fail');
+            
             
         } 
         else{
@@ -84,12 +89,13 @@ enviar.addEventListener('click', (e) => {
 
     function checkFoto(){
         let mensagemError = [];
-        if(imagem.nodeValue === '' || imagem==null){
+        if(imagem.value === '' || imagem==null){
             e.preventDefault();
             mensagemError.push('Ei, ninja-chan, adicione sua foto!')
             placeholder[3].innerText = mensagemError;
-            item[3].classList.add('fail');
             item[3].classList.remove('sucess');
+            item[3].classList.add('fail');
+            
         }
         
         else{
