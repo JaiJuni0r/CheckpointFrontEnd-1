@@ -14,7 +14,7 @@ const h2 = document.querySelector('h2');
 const h3 = document.querySelector('h3');
 const img = document.querySelector('img');
 
-form.addEventListener('submit', (e) => {
+enviar.addEventListener('click', (e) => {
 
     
     checkNome();
@@ -35,7 +35,7 @@ form.addEventListener('submit', (e) => {
             item[0].classList.remove('fail');
             placeholder[0].innerText = null;
             item[0].classList.add('sucess');
-            mensagemError.push('Nome do Jogo')
+            mensagemError.push('Nome do seu ninja:')
             placeholder[0].innerText = mensagemError;
             h1.innerText = nome.value;
         }
@@ -54,7 +54,7 @@ form.addEventListener('submit', (e) => {
             item[1].classList.remove('fail');
             placeholder[1].innerText = null;
             item[1].classList.add('sucess');
-            mensagemError.push('Nome do Jogo')
+            mensagemError.push('Nome da sua aldeia:')
             placeholder[1].innerText = mensagemError;
             h2.innerText = aldeia.value;
         }
@@ -75,7 +75,7 @@ form.addEventListener('submit', (e) => {
             item[2].classList.remove('fail');
             placeholder[2].innerText = null;
             item[2].classList.add('sucess');
-            mensagemError.push('Nome do Jogo')
+            mensagemError.push('Seu rank')
             placeholder[2].innerText = mensagemError;
             h3.innerText = rank.value;
             
@@ -96,7 +96,7 @@ form.addEventListener('submit', (e) => {
             item[3].classList.remove('fail');
             placeholder[3].innerText = null;
             item[3].classList.add('sucess');
-            mensagemError.push('Nome do Jogo')
+            mensagemError.push('Sua foto ninja')
             placeholder[3].innerText = mensagemError;
             img.src = imagem.value;
         }
