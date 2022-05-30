@@ -9,90 +9,68 @@
     <script src="https://kit.fontawesome.com/65608040c5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="titulo">
-
-    <h1>Preencha os campos abaixo e espere sua missão ninja!</h1>
-    
-  </div>
-    <main> 
-        <section>
+  
 
     <div class="formulario">
 
         <form action="" method="get" class="formStyling" id="form">
-            <div class="item">
-                <label for="nomeNinja">Digite seu nome</label>
-                <input type="text" id="nomeNinja" name="nomeNinja">
-                <i class="fa-regular fa-thumbs-up"></i>
-                <i class="fa-regular fa-thumbs-down"></i>
-                <div class="error"></div>
-            </div>
 
-            <div class="item">
-                <label for="nomeAldeia">Digite sua aldeia</label>
-                <input type="text" id="nomeAldeia" name="nomeAldeia">
-                <i class="fa-regular fa-thumbs-up"></i>
-                <i class="fa-regular fa-thumbs-down"></i>
-                <div class="error"></div>
-            </div>
-            <div>
-            <legend>Qual seu rank?</legend>
-            <ul>
-                <li>
-                  <label for="title_1">
-                    <input type="radio" id="title_1" name="title" value="A">
-                    Gennin
-                  </label>
-                </li>
-                <li>
-                  <label for="title_2">
-                    <input type="radio" id="title_2" name="title" value="K" >
-                    Chunnin
-                  </label>
-                </li>
-                <li>
-                  <label for="title_3">
-                    <input type="radio" id="title_3" name="title" value="Q">
-                    Jonnin
-                  </label>
-                </li>
-                <li>
-                    <label for="title_4">
-                      <input type="radio" id="title_3" name="title" value="Q">
-                      ANBU
-                    </label>
-                </li>
-                <li>
-                    <label for="title_3">
-                      <input type="radio" id="title_3" name="title" value="Q">
-                      Hokage
-                    </label>
-                </li>
-            </ul>
-            </div>
+          <div class="item">
+            <label for="nomeNinja" class="placeholder">Digite seu nome:</label>
+            <input type="text" class= "input" id="nomeNinja" placeholder=" ">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <i class="fa-regular fa-thumbs-down"></i>
+            <div class="error"></div>
+          </div>
 
-            <br>
+          <div class="item">
+            <label for="nomeAldeia" class="placeholder">Digite sua aldeia:</label>
+            <input type="text" class= "input" id="nomeAldeia" placeholder=" ">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <i class="fa-regular fa-thumbs-down"></i>
+            <div class="error"></div>
+          </div>
 
-            <div>
-                <label for="nomeAldeia">Digite sua url para anexar sua imagem</label>
-                <input id="img-input" type="url" name="imagem">
-            </div>
-            <div id="img-container">
-                <img id="preview" src="">
-            </div>
-            
-        <div class="item">
+          <div class="item">
+            <label for="nomeRank" class="placeholder">Digite seu rank:</label>
+            <input type="text" class= "input" id="nomeRank" placeholder=" ">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <i class="fa-regular fa-thumbs-down"></i>
+            <div class="error"></div>
+          </div>
 
-                <button type="submit">Dattebayo!</button>
+          <div class="item">
+            <label for="fotoNinja" class="placeholder">Sua foto ninja!</label>
+            <input id="fotoNinja" class="input" type="text" placeholder=" " />
+            <i class="fa-regular fa-thumbs-up"></i>
+            <i class="fa-regular fa-thumbs-down"></i>
+            <div class="error"></div>
+          </div>
+
+
+          <div class="item">
+
+            <button type="submit">Dattebayo!</button>
                 
-            </div>
+          </div>
+
         </form>
-    </div>
-</section>
-</main>
 
-<div class="card"></div>
+        <div class="card">
+          <img
+            src='http://2.bp.blogspot.com/-yExXq_7I6Ak/UMkokC783oI/AAAAAAAAAGU/SH87ynljafM/s1600/convocacao.png'/>
+          <div class="text">
+            <h1>Título do game.</h1>
+            <h2 class="animate-text">2020</h2>
+            <h3 class="animate-text">Descrição do game. <h3>
+          </div>
+        </div>
+        <!---->
+    
+        <div class="cardNinja" id="cardNinja">
+        </div>
 
-<script src="/FrontEnd2/Checkpoint-1/js/script.js"></script>
+
+<script src="./js/script.js"></script>
 </body>
 </html>
